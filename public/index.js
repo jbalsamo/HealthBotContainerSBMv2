@@ -52,7 +52,7 @@ function initBotConversation() {
                         */
 
                         // Use the following activity to proactively invoke a bot scenario
-                        /*
+              
                         store.dispatch({
                             type: 'DIRECT_LINE/POST_ACTIVITY',
                             meta: {method: 'keyboard'},
@@ -61,7 +61,7 @@ function initBotConversation() {
                                     type: "invoke",
                                     name: "TriggerScenario",
                                     value: {
-                                        trigger: "{scenario_id}",
+                                        trigger: "covid19",
                                         args: {
                                             myVar1: "{custom_arg_1}",
                                             myVar2: "{custom_arg_2}"
@@ -70,7 +70,7 @@ function initBotConversation() {
                                 }
                             }
                         });
-                        */
+             
                     }
                     return next(action);
                 }
