@@ -130,12 +130,12 @@ function adaptiveCardsOption(event) {
 function grayButton(button) {
     button.style.backgroundColor = "#d9d9d9";
     button.style.color = "#ffffff";
-    button.height = "37px";
+//    button.height = "37px";
 }
 function blueButton(button) {
     button.style.backgroundColor = "#990000";
     button.style.color = "white";
-    button.height = "37px";
+//    button.height = "37px";
 }
 function disableParentButtons(children, targetButton) {
     for (let i = 0; i < children.length; i++) {
@@ -153,8 +153,8 @@ function disableParentButtons(children, targetButton) {
                 } else {
                     blueButton(children[i]);
                 }
-                children[i].classList.remove("ac-pushButton");
-                children[i].classList.add("old-button");
+//                children[i].classList.remove("ac-pushButton");
+//                children[i].classList.add("old-button");
                 setTimeout(function () {
                     if (children[i] != null) {
                         children[i].onclick = "null";
@@ -193,8 +193,8 @@ function disableButtons(targetButton) {
             if (allChildren[i].innerText !== targetButton.innerText) {
                 grayButton(allChildren[i]);
             }
-            allChildren[i].classList.remove("ac-pushButton");
-            allChildren[i].classList.add("old-button");
+//            allChildren[i].classList.remove("ac-pushButton");
+//            allChildren[i].classList.add("old-button");
             allChildren[i].onclick = "null";
             allChildren[i].removeEventListener("click", selectOption);
             allChildren[i].style.outline = "none";
