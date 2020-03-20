@@ -14,10 +14,27 @@ body {
   background-color: rgb(153,0,0);
 }
 
-.wc-message-from {
+.from-user {
+    display: none;
+}
+
+.avatar {
+    display: none;
+}
+
+.timestamp {
+    display: none;
+}
+
+
+.main {
     display: none;
 }
 
 .wc-message-from-me {
+    display: none;
+}
+
+.css-1882x3w > .main, [data-css-1882x3w] > .main {
     display: none;
 }
